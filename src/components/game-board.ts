@@ -1,13 +1,4 @@
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged
-} from "firebase/auth";
-import { auth } from "../firebase/firebase-config";
-
-class LoginForm extends HTMLElement {
+class GameBoard extends HTMLElement {
   private isSignUp = false;
 
   connectedCallback() {
@@ -74,4 +65,4 @@ class LoginForm extends HTMLElement {
   }
 }
 
-customElements.define("login-form", LoginForm);
+customElements.define("game-board", GameBoard);
